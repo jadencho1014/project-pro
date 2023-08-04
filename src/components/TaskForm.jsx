@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
+import ThemeToggleButton from "./ThemeToggleButton";
 
 const TaskForm = ({ task, handleSubmit, handleChange }) => {
   const navigate = useNavigate();
@@ -39,6 +40,7 @@ const TaskForm = ({ task, handleSubmit, handleChange }) => {
           <Link to="/about">About</Link>
           <Link to="/calendar">Calendar</Link>
           <Link to="/chart">Chart</Link>
+          <ThemeToggleButton />
         </div>
       </div>
 
