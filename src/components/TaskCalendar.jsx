@@ -5,13 +5,14 @@ import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import ThemeToggleButton from "./ThemeToggleButton";
 
 const localizer = momentLocalizer(moment);
 
 const eventStyleGetter = (event, start, end, isSelected) => {
   return {
     style: {
-      backgroundColor: "#d51111",
+      backgroundColor: "#e86161",
     },
   };
 };
@@ -48,6 +49,7 @@ const TaskCalendar = ({ tasks }) => {
           <Link to="/about">About</Link>
           <Link to="/calendar">Calendar</Link>
           <Link to="/chart">Chart</Link>
+          <ThemeToggleButton />
         </div>
       </div>
       <div className="calendar">

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { BarChart, CartesianGrid, XAxis, YAxis, Tooltip, Bar } from "recharts";
+import ThemeToggleButton from "./ThemeToggleButton";
 
 const ProgressChart = ({ tasks }) => {
   const data = tasks.map((task) => ({
@@ -31,6 +32,7 @@ const ProgressChart = ({ tasks }) => {
           <Link to="/about">About</Link>
           <Link to="/calendar">Calendar</Link>
           <Link to="/chart">Chart</Link>
+          <ThemeToggleButton />
         </div>
       </div>
       <div className="progress-chart">
@@ -43,7 +45,7 @@ const ProgressChart = ({ tasks }) => {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Bar dataKey="Progress" fill="#d51111" />
+          <Bar dataKey="Progress" fill="#e86161" />
         </BarChart>
       </div>
     </div>

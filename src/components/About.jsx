@@ -3,6 +3,7 @@ import ContactForm from "./ContactForm";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import ThemeToggleButton from "./ThemeToggleButton";
 
 const About = () => {
   const navigate = useNavigate();
@@ -26,6 +27,7 @@ const About = () => {
           <Link to="/about">About</Link>
           <Link to="/calendar">Calendar</Link>
           <Link to="/chart">Chart</Link>
+          <ThemeToggleButton />
         </div>
       </div>
       <div className="about-page">

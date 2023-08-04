@@ -7,9 +7,24 @@
 }
 
 body {
-  background: #ffffff;
-  color: #393939;
   min-width: 700px;
+  --bg-color: #ffffff;
+  --text-color: #393939;
+  --button-bg-color: #d51111;
+  --button-text-color: #fff;
+  --link-color: #b60000;
+  --header-background: #ffe5e5;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.dark-mode {
+  --bg-color: #171717;
+  --text-color: #dcdcdc;
+  --button-bg-color: #e86161;
+  --button-text-color: #fcfcfc;
+  --link-color: #f9c6c6;
+  --header-background: #4b4545;
 }
 
 .header {
@@ -18,7 +33,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 10px;
-  background-color: #ffe5e5;
+  background-color: var(--header-background);
   border-bottom: 1px solid #525252;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -36,7 +51,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #b60000;
+  color: var(--link-color);
 }
 
 button {
@@ -63,9 +78,9 @@ button {
   display: inline-block;
   padding: 8px 20px;
   cursor: pointer;
-  background-color: #d51111;
-  color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: 1px solid #7b7b7b;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
@@ -83,9 +98,9 @@ button {
 
 .task-options button {
   padding: 8px 20px;
-  background-color: #d51111;
-  color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: 1px solid #7b7b7b;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -109,9 +124,9 @@ button {
 .task-form button,
 .about-page button {
   padding: 6px 16px;
-  background-color: #d51111;
-  color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: 1px solid #7b7b7b;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -148,9 +163,9 @@ textarea {
 .bottom-buttons button {
   padding: 6px 16px;
   margin-right: 0.5rem;
-  background-color: #d51111;
-  color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: 1px solid #7b7b7b;
   border-radius: 5px;
 }
 
@@ -164,6 +179,18 @@ textarea {
 }
 
 .description {
-  color: #6f6f6f;
+  color: #848484;
   padding-bottom: 0.25rem;
+}
+
+.dark-mode-button {
+  background-color: var(--bg-color);
+  margin-right: 10px;
+  border: 1px solid #7b7b7b;
+  border-radius: 5px;
+}
+
+.top-right-buttons {
+  display: flex;
+  align-items: center;
 }

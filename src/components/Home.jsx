@@ -5,6 +5,7 @@ import ExportData from "./ExportData";
 import ImportData from "./ImportData";
 import logo from "../assets/logo.png";
 import { useNavigate } from "react-router-dom";
+import ThemeToggleButton from "./ThemeToggleButton";
 
 const Home = ({ tasks, deleteTask, setTasks }) => {
   const navigate = useNavigate();
@@ -28,6 +29,7 @@ const Home = ({ tasks, deleteTask, setTasks }) => {
           <Link to="/about">About</Link>
           <Link to="/calendar">Calendar</Link>
           <Link to="/chart">Chart</Link>
+          <ThemeToggleButton />
         </div>
       </div>
 
