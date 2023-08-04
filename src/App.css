@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #ffffff;
+  color: #393939;
+  min-width: 700px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #ffe5e5;
+  border-bottom: 1px solid #525252;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  cursor: pointer;
+  width: 200px;
+  flex: 1;
+  padding-top: 5px;
+}
+
+.calendar {
+  height: 500px;
+}
+
+a {
+  text-decoration: none;
+  color: #b60000;
+}
+
+button {
+  cursor: pointer;
+}
+
+.top-right-buttons a {
+  margin-right: 40px;
+  font-size: 18px;
+}
+
+.task-options {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
+  padding: 2rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+.import-data {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-file-upload {
+  display: inline-block;
+  padding: 8px 20px;
+  cursor: pointer;
+  background-color: #d51111;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.home input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.task-options button {
+  padding: 8px 20px;
+  background-color: #d51111;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.task-form,
+.about-page {
+  padding: 2rem;
+}
+
+.task-form label,
+.about-page label {
+  padding-right: 0.5rem;
+}
+
+.task-form h2,
+.about-page h2,
+.about-page h3 {
+  padding-bottom: 1.5rem;
+}
+
+.task-form button,
+.about-page button {
+  padding: 6px 16px;
+  background-color: #d51111;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 500px;
+  height: 100px;
+  margin-top: 0.5rem;
+}
+
+.about-page p {
+  padding-bottom: 1.5rem;
+}
+
+.calendar {
+  padding: 2rem;
+}
+
+.progress-chart {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.task {
+  padding: 0 0 1rem 2rem;
+}
+
+.task h3 {
+  padding: 0.25rem 0 0.25rem 0;
+}
+
+.bottom-buttons button {
+  padding: 6px 16px;
+  margin-right: 0.5rem;
+  background-color: #d51111;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task input {
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+.comment {
+  padding-bottom: 0.25rem;
+}
+
+.description {
+  color: #6f6f6f;
+  padding-bottom: 0.25rem;
 }
